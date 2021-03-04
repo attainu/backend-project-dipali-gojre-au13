@@ -1,11 +1,13 @@
 const express = require('express');
 const path = require('path')
+const passport = require('passport')
+const session = require('express-session')
 const app = express();
 const connectDB = require('./config/db')
 // const http = require('http');
 const morgan = require('morgan')
 const finalhandler = require('finalhandler')
-const exphbs = require('express-handlebars')
+const exphbs = require('express-handlebars');
 const hostname = 'localhost';
 const port = 3000;
 
@@ -15,17 +17,34 @@ const port = 3000;
 //     app.use(morgon('dev'))
 // }
 
+//passport config
+require('./config/passport')(passport)
 
 
 //handlebars
 app.engine('.hbs', exphbs({defaultLayout:'main',extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
+//sessions
+app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false,
+  }))
+
+// Passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
+
+
+
 //static folder
 app.use(express.static(path.join(__dirname, 'public')))
 
 //routes
 app.use('/', require('./routes/index'))
+app.use('/auth', require('./routes/auth'))
+
 
 //call database
 
