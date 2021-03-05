@@ -9,7 +9,7 @@ const morgan = require('morgan')
 const finalhandler = require('finalhandler')
 const exphbs = require('express-handlebars');
 const hostname = 'localhost';
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 
