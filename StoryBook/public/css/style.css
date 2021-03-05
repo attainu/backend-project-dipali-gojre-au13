@@ -1,12 +1,15 @@
 body{
-    background:pink;
-    background-image: url(https://images.unsplash.com/photo-1580316008590-43d5fb8cc3cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2VycyUyMGluJTIwYSUyMHZhc2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-    background-image: url(https://images.unsplash.com/photo-1612992457521-46acef84e1a6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8Ym9va3N0b3JlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-    text-emphasis-color: white;
+
+    background-image: url(cover.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 p{
     margin: 10px 0 !important;
 }
+
 
 .login-container {
     width:400px;
@@ -19,3 +22,16 @@ img{
     
     
 }
+
+
+.login-container {
+    width:400px;
+    margin-top:50px;
+    text-align:center;
+}
+
+.card{
+    background-color:rgb(189, 210, 231);
+}
+
+
