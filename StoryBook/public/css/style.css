@@ -1,11 +1,26 @@
 body{
+
     background-image: url(cover.jpg);
     opacity: 0.9;
     background-size: cover;
     background-attachment: fixed;
+
 }
 p{
     margin: 10px 0 !important;
+}
+
+
+.login-container {
+    width:400px;
+    margin: top 10px;
+    text-align:center;
+}
+img{
+    width: 500px;
+    margin-top: 1px;
+    
+    
 }
 
 
@@ -18,4 +33,5 @@ p{
 .card{
     background-color:rgb(189, 210, 231);
 }
+
 
