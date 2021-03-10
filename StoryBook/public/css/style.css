@@ -1,8 +1,8 @@
 body{
-    background-image: url(cover.jpg);
+    background:url();
     opacity: 0.9;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:fixed;
 }
 p{
     margin: 10px 0 !important;
@@ -18,4 +18,21 @@ p{
 .card{
     background-color:rgb(189, 210, 231);
 }
+
+.fa-small{
+    font-size:16px !important;
+}
+
+.btn-float{
+    float: left;
+    margin-right: 10px;
+}
+
+.img-small{
+  width: 180px;  
+}
+
+
+
+
 

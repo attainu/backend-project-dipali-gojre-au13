@@ -13,6 +13,7 @@
     "finalhandler": "^1.1.2",
     "http": "0.0.1-security",
     "method": "^2.0.0",
+    "method-override": "^3.0.0",
     "moment": "^2.29.1",
     "mongoose": "^5.11.18",
     "morgan": "^1.10.0",
@@ -27,7 +28,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "dev":"nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "author": "Dipali",
   "license": "ISC"
