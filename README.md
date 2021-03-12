@@ -1,8 +1,9 @@
-
 StoryBook Project
 
-story book is my backend project.
-we use google authntication 
-mongodb for database
 
-<
+Command for Run :
+$ npm run dev
+
+Heroku Link : http://story-deploy.herokuapp.com/
+
+
