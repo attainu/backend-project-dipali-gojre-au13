@@ -1,5 +1,5 @@
 body{
-    background-image: url();
+    background-image: url(c2.jpg);
     opacity: 0.9;
     background-size: cover;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ p{
 }
 
 .card{
-    background-color:rgb(189, 210, 231);
+    background-color:rgb(203, 231, 241);
 }
 
 .fa-small{
